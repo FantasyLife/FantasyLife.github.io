@@ -5,8 +5,14 @@
 		window.close()
 		}, window.location = "ts3server://fantasy.life-for.me");
 		*/
-		setTimeout(function() {
-		history.back()
-		}, window.location = "ts3server://fantasy.life-for.me");
+		if (document.referrer == "") {
+			setTimeout(function() {
+			 window.close()
+			}, window.location = "ts3server://fantasy.life-for.me")
+		} else {
+			setTimeout(function() {
+			history.back()
+			}, window.location = "ts3server://fantasy.life-for.me")
+		}
 	</script>
  </html>
