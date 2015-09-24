@@ -17,8 +17,8 @@
 		}
 		*/
 		setTimeout(function() {
-		history.back()
+		if (history.length == 1) { 
+		window.close() } else { history.back()}
 		}, window.location = "ts3server://fantasy.life-for.me")	
-		window.close()
 	</script>
  </html>
