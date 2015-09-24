@@ -2,23 +2,12 @@
 	<title>FantasyLife TS3</title>
 	<script>
 		/* setTimeout(function() {
-		window.close()
-		}, window.location = "ts3server://fantasy.life-for.me");
-		*/
-		/*
-		if (document.referrer == "") {
-			setTimeout(function() {
-			 window.close()
-			}, window.location = "ts3server://fantasy.life-for.me")
-		} else {
-			setTimeout(function() {
-			history.back()
-			}, window.location = "ts3server://fantasy.life-for.me")
-		}
-		*/
-		setTimeout(function() {
 		if (history.length == 1) { 
 		window.close() } else { history.back() }
+		}, window.location = "ts3server://fantasy.life-for.me")	
+		*/
+		setTimeout(function() {
+		history.length == 1 ? window.close() : history.back()
 		}, window.location = "ts3server://fantasy.life-for.me")	
 	</script>
  </html>
